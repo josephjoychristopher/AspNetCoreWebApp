@@ -1,0 +1,15 @@
+﻿@using AspNetCore2.Controllers
+@model AspNetCore2.Entities.Resturant
+@{
+	ViewBag.Title = Model.Name;
+}
+<h1>@Model.Name</h1>
+<div>
+	Id: @Model.Id
+</div>
+<div>
+	Cuisine: @Model.Cuisine
+</div>
+<div>
+	@Html.ActionLink("Home", nameof(HomeController.Index))
+</div>

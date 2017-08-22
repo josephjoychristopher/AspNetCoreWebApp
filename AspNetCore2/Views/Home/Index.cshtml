@@ -1,0 +1,17 @@
+﻿@model AspNetCore2.ViewModels.HomePageViewModel
+@{ 
+	ViewBag.Title = "Home";
+
+}
+<h1>Welcome!</h1>
+
+@foreach (var restaurant in Model.Restaurants)
+{
+	@Html.Partial("_Summary",restaurant)
+}
+<div>
+	<a  class="btn btn-primary" asp-action="Create">Create</a>
+</div>
+
+
+
